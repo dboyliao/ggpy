@@ -14,7 +14,7 @@ from statsmodels.sandbox.regression.predstd import wls_prediction_std
 from statsmodels.stats.outliers_influence import summary_table
 
 date_types = (
-    pd.tslib.Timestamp,
+    pd.Timestamp,
     pd.DatetimeIndex,
     pd.Period,
     pd.PeriodIndex,

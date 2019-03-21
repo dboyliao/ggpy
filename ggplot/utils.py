@@ -1,9 +1,11 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
+
+import datetime
+
 import matplotlib.cbook as cbook
 import numpy as np
 import pandas as pd
-import datetime
 
 
 def format_ticks(ticks):
@@ -78,7 +80,7 @@ def is_iterable(obj):
         return False
 
 date_types = (
-    pd.tslib.Timestamp,
+    pd.Timestamp,
     pd.DatetimeIndex,
     pd.Period,
     pd.PeriodIndex,
