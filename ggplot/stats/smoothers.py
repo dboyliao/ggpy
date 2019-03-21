@@ -1,14 +1,17 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
+
+import datetime
+
 import numpy as np
-from pandas.lib import Timestamp
 import pandas as pd
+import scipy.stats as stats
+from pandas import Timestamp
+
 import statsmodels.api as sm
 from statsmodels.nonparametric.smoothers_lowess import lowess as smlowess
 from statsmodels.sandbox.regression.predstd import wls_prediction_std
 from statsmodels.stats.outliers_influence import summary_table
-import scipy.stats as stats
-import datetime
 
 date_types = (
     pd.tslib.Timestamp,
